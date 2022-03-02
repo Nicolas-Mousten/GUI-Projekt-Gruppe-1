@@ -17,4 +17,8 @@ public class PageController {
     public String DonatePage(){
         return "donatePage";
     }
+    @GetMapping("/underConstructionPage")
+    public String UnderConstructionPage(){
+        return "UnderConstructionPage";
+    }
 }
