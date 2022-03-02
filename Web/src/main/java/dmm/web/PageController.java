@@ -9,8 +9,8 @@ public class PageController {
     public String mainPage(){
         return "mainPage";
     }
-    @GetMapping("/TestPage")
+    @GetMapping("/firstPage")
     public String TestPage(){
-        return "TestPage";
+        return "firstPage";
     }
 }
