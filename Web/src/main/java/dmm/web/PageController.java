@@ -6,11 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PageController {
     @GetMapping("/")
-    public String mainPage(){
+    public String MainPage(){
         return "mainPage";
     }
     @GetMapping("/firstPage")
-    public String TestPage(){
+    public String FirstPage(){
         return "firstPage";
+    }
+    @GetMapping("/donatePage")
+    public String DonatePage(){
+        return "donatePage";
     }
 }
