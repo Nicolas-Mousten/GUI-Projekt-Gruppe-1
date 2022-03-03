@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns:width="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>main page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Standard.css">
+        <!--<style>
+            table {
+                white-space-collapsing:discard
+            }
+            table td {
+                background-color: green;
+                border: none;
+            }
 
-        <header class="header">
+            #pic1 {
+                width: 100px;
+                height: 100px;
+            }
+            .first-row {
+                display: inline;
+            }
+        </style>-->
 
-            <a href="/"> <img src="DMMLogo.jpg" alt="DMM Logo" width="66px" height="69"></a>
-            <sup><b>DMM</b> - <small><small><i>"Fix dit madspild"</i><small><small> - det er tid til at stoppe</small></small></small></small></sup>
-        </header>
+    </head>
+    <!-- Content below here -->
+    <body >
+    <header class="header">
 
-        <div class="MenuBackGround">
+        <a href="/"> <img src="DMMLogo.jpg" alt="DMM Logo" width="66px" height="69"></a>
+        <sup><b>DMM</b> - <small><small><i>"Fix dit madspild, det er tid til at stoppe"</i></small></small></sup>
+    </header>
+    <div class="MenuBackGround">
         <!-- Front page -->
         <div class="dropdown">
             <a href="/" >
@@ -22,57 +41,55 @@
             </a>
         </div>
         <!-- First Drop down window-->
-            <div class="dropdown">
-                <button class="dropbtn">Om Mad</button>
-                <div class="dropdown-content">
-                    <a href="/firstPage">madspild</a>
-                    <a href="/underConstructionPage">madspilds support</a>
-                </div>
+        <div class="dropdown">
+            <button class="dropbtn">Om Mad</button>
+            <div class="dropdown-content">
+                <a href="/firstPage">madspild</a>
+                <a href="/underConstructionPage">madspilds support</a>
             </div>
-            <!-- Second Drop down window-->
-            <div class="dropdown">
-                <button class="dropbtn">Om oss</button>
-                <div class="dropdown-content">
-                    <a href="/underConstructionPage">Vores Nyheder</a>
-                    <a href="/underConstructionPage">Bestryelses poster</a>
-                    <a href="/underConstructionPage">Regnskab</a>
-                    <a href="/underConstructionPage">Sammarbejdspartnere</a>
-                </div>
+        </div>
+        <!-- Second Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Om oss</button>
+            <div class="dropdown-content">
+                <a href="/underConstructionPage">Vores Nyheder</a>
+                <a href="/underConstructionPage">Bestryelses poster</a>
+                <a href="/underConstructionPage">Regnskab</a>
+                <a href="/underConstructionPage">Sammarbejdspartnere</a>
             </div>
-            <!-- Third Drop down window-->
-            <div class="dropdown">
-                <button class="dropbtn">Hvad kan du gøre!'</button>
-                <div class="dropdown-content">
-                    <a href="/underConstructionPage">Tilmeld Firma</a>
-                    <a href="/underConstructionPage">Bliv frivillig</a>
-                    <a href="/underConstructionPage">Skraldesteder</a>
-                    <a href="/donatePage">Donationer</a>
-                </div>
+        </div>
+        <!-- Third Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Hvad kan du gøre!'</button>
+            <div class="dropdown-content">
+                <a href="/underConstructionPage">Tilmeld Firma</a>
+                <a href="/underConstructionPage">Bliv frivillig</a>
+                <a href="/underConstructionPage">Skraldesteder</a>
+                <a href="/donatePage">Donationer</a>
             </div>
-            <!-- Fourth Drop down window-->
-            <div class="dropdown">
-                <button class="dropbtn">Info</button>
-                <div class="dropdown-content">
-                    <a href="/underConstructionPage">Till firmaer</a>
-                    <a href="/underConstructionPage">Vores restuarant</a>
-                    <a href="/underConstructionPage">Menu</a>
-                </div>
+        </div>
+        <!-- Fourth Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Info</button>
+            <div class="dropdown-content">
+                <a href="/underConstructionPage">Till firmaer</a>
+                <a href="/underConstructionPage">Vores restuarant</a>
+                <a href="/underConstructionPage">Menu</a>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Questionable Pages</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Questionable Pages</button>
                 <div class="dropdown-content">
-                    <a href="https://www.boeing.com/commercial/737max/" target="_blank">Nr 1</a>
-                    <a href="https://www.google.dk/" target="_blank">Nr 2</a>
-                    <a href="https://www.youtube.com/watch?v=G1IbRujko-A" target="_blank">Nr 3</a>
+                    <a href="/underConstructionPage">Nr 1</a>
+                    <a href="/underConstructionPage">Nr 2</a>
+                    <a href="/underConstructionPage">Nr 3</a>
                 </div>
             </div>
         </div>
-    <!-- Content below here -->
-        <body>
-        <div id="hashtag">
-            <table>
-                <tr>
-                    <td><p><em> - "In Denmark alone, we each year waste 700,000 tons of food that could have
+    <div style="width: 100%">
+            <table id="table">
+                <tr id="firstRow">
+                    <td id="quote1"><p> - "In Denmark alone, we each year waste 700,000 tons of food that could have
                         been eaten. The food waste costs Danish consumers more than 11 billion DKK
                         a year. The households waste more than 260,000 tons of food per year and
                         the food industry 133,000 tons.
@@ -81,23 +98,31 @@
                         of the damaging impact on the environment from food production is caused by
                         food waste and, therefore, could have been avoided – or alternatively used
                         for global communities, who does not have adequate amounts of nutritional food." <br> - untitedagainstfoodwaste.com
-                    </em></p></td>
-                    <td><img src="food-waste-bin-825x510.jpg"></td>
+                    </p></td>
+                    <td><img id="foodwaste" src="output-onlinejpgtools.png" width="100" height="100"></td>
+                </tr>
+                <tr id="secondRow">
+                    <td><img src="mad.jpg" id="foodwaste2"></td>
+                    <td><p id="quote2">“To me, it’s sort of funny that wasting food is not taboo.
+                        It’s one of the last environmental ills that you can just get away with.”
+                        <br>– Jonathan Bloom, journalist and author of American Wasteland. </p></td>
+                </tr>
+                <tr id="thirdRow">
+                    <td><p id="quote3">“Together, we can reverse this unacceptable trend and improve lives.
+                        In industrialised regions, almost half of the total food squandered,
+                        around 300 million tonnes annually, occurs because producers, retailers and
+                        consumers discard food that is still fit for consumption.” – José Graziano
+                        da Silva, Director-General of Food and Agriculture Organization of
+                        the United Nations. </p></td>
+                    <td><img src="foodwaste3.jpg" id="foodwaste3"></td>
                 </tr>
                 <tr>
-                    <td><img src="mad.jpg"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <img src="foodwaste4.jpg" id="foodwaste4" width=100%>
+                    </td>
+
                 </tr>
             </table>
-        </div>
+    </div>
         </body>
-    </head>
 </html>

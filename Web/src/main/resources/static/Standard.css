@@ -61,3 +61,76 @@
     text-align: center;
 }
 
+#foodwaste {
+    width: 300px;
+    height: auto;
+    border-radius: 40%;
+    margin-left: 75px;
+}
+
+#foodwaste2 {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    margin-left: 75px;
+}
+
+#foodwaste3 {
+    border-radius:25px;
+    width: 450px;
+    height: auto;
+    margin-left: 75px;
+}
+
+table {
+    width: 100%;
+    background-color: green;
+    border-collapse: collapse;
+    padding: 0;
+    border-style: none;
+    float: left;
+    margin: 0;
+}
+table tr{
+    margin: 75px;
+}
+table td {
+    padding: 0;
+    margin: 0;
+}
+
+#quote1 {
+    color: lightgrey;
+    type: calibri;
+    text-align: left;
+    margin-left: 50px;
+    width: 500px;
+}
+
+#quote2 {
+    color: lightgrey;
+    width: 400px;
+    margin-left: 50px;
+}
+
+#quote3 {
+    color: lightgrey;
+    width: 400px;
+    margin-left: 75px;
+}
+#firstRow {
+    display: inline;
+}
+
+#secondRow {
+    display: inline;
+}
+
+#thirdRow {
+    display: inline;
+}
+
+body{
+    margin: 0;
+}
+
