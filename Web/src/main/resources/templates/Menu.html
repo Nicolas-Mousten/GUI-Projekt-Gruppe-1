@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Standard.css">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        #main-box{
+            width: 70%;
+            height: 2200px;
+            background-color: #D5B693;
+            margin: auto;
+        }
+        #firstbox{
+            width: 100%;
+            height: 500px;
+            background-image:url("screen-1.png");
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tekstkasse{
+            width: 420px;
+            height: 330px;
+            background-color: #D5B693;
+            background-position: center;
+            text-align:center;
+            position: absolute;
+
+        }
+        #rest{
+            font-size: 90px;
+            font-weight: bolder;
+            transform: translateX(-5px);
+            font-family: "Bradley Hand ITC";
+        }
+        .divruler{
+            height: 2px;
+            width: 90%;
+            background-color: black;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+        #secondbox{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            padding-bottom: 20px;
+        }
+        .leftboxTo{
+
+            width: 50%;
+            height: 500px;
+            background-size: 100% 100%;
+            background-image:url("billedeTilTekst.jpg");
+            display: flex;
+            flex-direction: column;
+        }
+        #tekstStor{
+            font-size: 34px;
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            padding-top: 15%;
+            padding-left: 15%;
+            padding-right: 10%;
+        }
+        #tekst{
+            font-size: 24px;
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            padding-left: 15%;
+            padding-right: 10%;
+        }
+        .rightboxTo{
+            width: 50%;
+            height: 500%;
+            background-size: contain;
+            display: flex;
+            background-size: contain;
+        }
+        #MadTilHjemløse{
+            padding-top: 10%;
+            margin-left: 1%;
+        }
+        #MadTilHjemløse2{
+            padding-top: 18%;
+        }
+
+        #MadTilHjemløse3{
+            padding-top: 52%;
+            transform: translateX(-532px);
+        }
+
+        #MadTilHjemløse4{
+            padding-top: 52%;
+            transform: translateX(-532px);
+        }
+        #thirdBox{
+            height: 500px;
+            width: 98%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        #tuesday{
+            background-image: url("madbillede1.jpg");
+            width: 33.33%;
+            height: 250px;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+        }
+        #wednesday{
+            background-image: url("Madbillede2.jpg");
+            width: 33.33%;
+            height: 250px;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+
+        }
+        #thursday{
+            background-image: url("madbillede3.jpg");
+            width: 33.33%;
+            height: 250px;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+        }
+        #friday{
+            background-image: url("madbillede4.jpg");
+            width: 33.33%;
+            height: 250px;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+        }
+        #saturday{
+            background-image: url("madbillede5.jpg");
+            width: 33.33%;
+            height: 250px;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+        }
+        #sunday{
+            background-image: url("madbillede6.jpg");
+            width: 33.33%;
+            height: 250px;
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            align-self: center;
+
+        }
+        .tirsdagKasse{
+            height: 80px;
+            width: 240px;
+            background-color: white;
+            align-self: center;
+        }
+
+        .onsdagkasse{
+            height: 80px;
+            width: 240px;
+            background-color: white;
+            align-self: center;
+        }
+        .torsdagkasse{
+            height: 80px;
+            width: 240px;
+            background-color: white;
+            align-self: center;
+        }
+        .fredagkasse{
+            height: 80px;
+            width: 240px;
+            background-color: white;
+            align-self: center;
+        }
+        .lørdagkasse {
+            height: 80px;
+            width: 240px;
+            background-color: white;
+            align-self: center;
+        }
+        .søndagkasse {
+            height: 80px;
+            width: 240px;
+            background-color: white;
+            align-self: center;
+        }
+        #tirsdag{
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            font-size: 20px;
+
+        }
+        #onsdag{
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #torsdag{
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #fredag{
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #lørdag{
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #søndag{
+            font-family: "Bradley Hand ITC";
+            font-size: 20px;
+            font-weight: bolder;
+
+        }
+        #tirsdagTekst{
+            font-weight: bolder;
+            font-family: "Bradley Hand ITC";
+            font-size: 50px;
+        }
+        #onsdagTekst{
+            font-weight: bolder;
+            font-family: "Bradley Hand ITC";
+            font-size: 50px;
+        }
+        #torsdagTekst{
+            font-weight: bolder;
+            font-family: "Bradley Hand ITC";
+            font-size: 50px;
+        }
+        #fredagTekst{
+            font-weight: bolder;
+            font-family: "Bradley Hand ITC";
+            font-size: 50px;
+        }
+        #lørdagTekst{
+            font-weight: bolder;
+            font-family: "Bradley Hand ITC";
+            font-size: 50px;
+        }
+        #søndagTekst{
+            font-weight: bolder;
+            font-family: "Bradley Hand ITC";
+            font-size: 50px;
+        }
+        .diverulerThree{
+            height: 2px;
+            width: 90%;
+            background-color: black;
+            margin-left: 5%;
+            margin-top: 2%;
+        }
+
+        #fourBox{
+            height:500px;
+            width: 100%;
+            background-image:url("billedeTilTekst.jpg");
+            background-size: 100% 100%;
+        }
+
+        #bigText{
+            font-size: 35px;
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            padding-top:10%;
+            padding-left: 10%;
+
+        }
+        #smallText{
+            font-size: 25px;
+            font-family: "Bradley Hand ITC";
+            font-weight: bolder;
+            padding-left: 5%;
+            padding-right: 5%;
+
+        }
+        #doner{
+            font-size: 20px;
+            padding-bottom: 5%;
+            padding-left: 5%;
+        }
+    </style>
+    <header class="header">
+
+        <a href="/"> <img src="DMMLogo.jpg" alt="DMM Logo" width="66px" height="69"></a>
+        <sup><b>DMM</b> - <small><small><i>"Fix dit madspild"</i><small><small> - det er tid til at stoppe</small></small></small></small></sup>
+    </header>
+
+    <div class="MenuBackGround">
+        <!-- Front page -->
+        <div class="dropdown">
+            <a href="/" >
+                <button class="dropbtn">
+                    Forside
+                </button>
+            </a>
+        </div>
+        <!-- First Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Om Mad</button>
+            <div class="dropdown-content">
+                <a href="/firstPage">madspild</a>
+                <a href="/underConstructionPage">madspilds support</a>
+            </div>
+        </div>
+        <!-- Second Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Om oss</button>
+            <div class="dropdown-content">
+                <a href="/underConstructionPage">Vores Nyheder</a>
+                <a href="/underConstructionPage">Bestryelses poster</a>
+                <a href="/underConstructionPage">Regnskab</a>
+                <a href="/underConstructionPage">Sammarbejdspartnere</a>
+            </div>
+        </div>
+        <!-- Third Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Hvad kan du gøre!'</button>
+            <div class="dropdown-content">
+                <a href="/underConstructionPage">Tilmeld Firma</a>
+                <a href="/underConstructionPage">Bliv frivillig</a>
+                <a href="/underConstructionPage">Skraldesteder</a>
+                <a href="/donatePage">Donationer</a>
+            </div>
+        </div>
+        <!-- Fourth Drop down window-->
+        <div class="dropdown">
+            <button class="dropbtn">Info</button>
+            <div class="dropdown-content">
+                <a href="/underConstructionPage">Till firmaer</a>
+                <a href="/underConstructionPage">Vores restuarant</a>
+                <a href="/menu">Menu</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Questionable Pages</button>
+            <div class="dropdown-content">
+                <a href="https://www.boeing.com/commercial/737max/" target="_blank">Nr 1</a>
+                <a href="https://www.google.dk/" target="_blank">Nr 2</a>
+                <a href="https://www.youtube.com/watch?v=G1IbRujko-A" target="_blank">Nr 3</a>
+            </div>
+        </div>
+    </div>
+    <!-- Content below here -->
+<body>
+<div id="main-box">
+    <div id="firstbox">
+        <div class="tekstkasse">
+            <p id="rest">Restaurant Fix dit madspild</p>
+        </div>
+    </div>
+    <div class="divruler"></div>
+    <div id="secondbox">
+        <div class="leftboxTo">
+            <p id="tekstStor">Om Restauranten: </p>
+            <p id="tekst">Vi startede som gadekøkken i 2000, hvor vi serverede mad for hjemløse i juletiden. Idag serverer vi mad alle ugens dage fra 17-22, med undtagelse af mandag.
+                Størstedelen af restaurantens brugere, er hjemløse, narkomaner, alkoholikere og psykisksyge. Der serveres et nærende varmt måltid mad ved hjælp af donationer og overskydende mad der hentes fra forskellige virksomheder</p>
+
+        </div>
+        <div class="rightboxTo">
+            <img id="MadTilHjemløse" src="Madtilhjemløse.png" width="245px" height="250px">
+            <img id="MadTilHjemløse2" src="homelessPeople3.jpg" width="272px" height="180px">
+            <img id="MadTilHjemløse3" src="homelessPeople2.jpg" widht="95px" height="180px">
+            <img id="MadTilHjemløse4" src="hjemløse5.jpg" width="260px" height="180px">
+
+        </div>
+        <div class="divrulerTo">
+
+        </div>
+    </div>
+    <div id="thirdBox">
+        <div id="tuesday">
+            <div class="tirsdagKasse">
+                <p id="tirsdag">Tirsdag</p>
+                <p id ="tirsdagTekst">INGEN </p>
+            </div>
+        </div>
+        <div id="wednesday">
+            <div class="onsdagkasse">
+                <p id="onsdag">Onsdag</p>
+                <p id="onsdagTekst">HJEMLØS</p>
+            </div>
+        </div>
+        <div id="thursday">
+            <div class="torsdagkasse">
+                <p id="torsdag">Torsdag</p>
+                <p id="torsdagTekst">ER</p>
+            </div>
+        </div>
+        <div id="friday">
+            <div class="fredagkasse">
+                <p id="fredag">Fredag</p>
+                <p id="fredagTekst">TIL</p>
+            </div>
+        </div>
+        <div id="saturday">
+            <div class="lørdagkasse">
+                <p id="lørdag">lørdag</p>
+                <p id="lørdagTekst">FOR</p>
+            </div>
+        </div>
+        <div id="sunday">
+            <div class ="søndagkasse">
+                <p id="søndag">Søndag</p>
+                <p id="søndagTekst">GOURMET</p>
+            </div>
+        </div>
+    </div>
+    <div class="diverulerThree"></div>
+
+    <div id="fourBox">
+        <div id=="boxItem">
+            <div class="bigFour">
+                <p id="bigText">Vores Koncept</p>
+                <p id="smallText">Vi ønsker at alle skal få lov at få oplevelsen af at smage Gourmetmad til trods for at man i dagligdagen kæmper med ting, hvor hvilken type mad der bliver spist, er en sidste priotering.
+                    Vores to kokke, som begge er pensioneret, med mange års erfaring fra forskellige steder i verden, arbejder frivilligt sammen med en masse andre frivillige.</p>
+                <br>
+                <br>
+                <br>
+                <a href="/donatePage"  id="doner">Doner til vores restuarant</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</head>
+</html>

@@ -21,5 +21,8 @@ public class PageController {
     public String UnderConstructionPage(){
         return "UnderConstructionPage";
     }
-    
+    @GetMapping("/menu")
+    public String menu(){
+        return "Menu";
+    }
 }
