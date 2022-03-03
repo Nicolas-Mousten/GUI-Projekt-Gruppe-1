@@ -1,0 +1,10 @@
+.boks {
+    height: 400px;
+    width: 35%;
+    margin: 75px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
